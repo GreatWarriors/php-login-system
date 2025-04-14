@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;       
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 300px;
+    }
+    h1, h2, h3{
+  	color: #000099;
+  	text-align: center;
+        font-family: Arial;
+  	font-weight: bold;
+  	margin: 2em auto 0px;
+     }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+
+    a{
+  	text-align: center;
+  	font-family: Arial;
+  	color: color: #000099;
+  	font-weight: bold;
+	display: block;
+  	margin: 7px auto;
+  	text-decoration: none;
+  	transition: all 0.3s ease;
+  	font-size: 15px;
+      }
+
+	a:hover{
+  	color: rgb(193, 18, 18);
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Welcome Dashboard</h2><br>
+<?php
+session_start();
+session_destroy();
+echo "You have been successfully logged out <a href='login.html'>Login again</a>";
+?>
+</div>
+</body>
+</html>
+
+
